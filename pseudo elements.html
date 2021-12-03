@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title> Pseudo elements </title>
+    <style>
+        h1{
+            color:red ;
+            background-color: seagreen;
+        }
+        p{
+            color: aqua;
+            background-color: rebeccapurple ;
+        }
+        p::first-line{
+            color: royalblue;
+            background-color: salmon;
+            font-family: 'Pacifico', cursive;
+            font-size: medium;
+            border:5px solid purple;
+            padding: 3px;
+        } 
+        p::first-letter{
+            color: rosybrown;
+            background-color: slategray;
+            font-size: large;
+            font-style: italic;
+        }
+        p::selection{
+            background-color: springgreen;
+            outline: turquoise;
+        }
+        input::placeholder{
+            font-size: large;
+            font-style: oblique;
+            color: thistle;
+        }
+        h1::before{
+            content: "$$$";
+            color: yellow;
+            width: fit-content;
+        }
+        h1::after{
+            content: "@@@";
+            color: tomato;
+            width: fit-content;
+        }
+        </style>
+        </head>
+        <body>
+            <h1> Practice on pseudo elements </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus reiciendis soluta, nobis quae facere distinctio aspernatur culpa minima doloribus,
+                 atque similique nulla esse omnis error ipsam asperiores? Adipisci, dignissimos laborum.</p>
+                 <form action="action.php" method="get">
+                    <label for="email"></label>
+                    <input type="text" name="email" placeholder="Email" class="contact" id="email" size="110" maxlength="60">
+                 </form>
+        </body>
+</html>
+
